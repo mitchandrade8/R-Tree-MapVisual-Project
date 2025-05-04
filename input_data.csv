@@ -1,0 +1,95 @@
+ID,Name,Population,MinX,MinY,MaxX,MaxY
+# --- United States (Estimates ~2023-2024, Metro Areas > 1M) ---
+1,New York Metro Area,20100000,-75.0,40.0,-71.8,41.8
+2,Los Angeles Metro Area,18500000,-119.0,33.4,-117.0,34.8
+3,Chicago Metro Area,9500000,-88.5,41.2,-87.0,42.5
+4,Dallas-Fort Worth Metroplex,8100000,-97.8,32.4,-96.0,33.3
+5,Houston Metro Area,7500000,-96.2,29.2,-94.5,30.3
+6,Washington DC Metro Area,6300000,-77.8,38.5,-76.5,39.4
+7,Miami Metro Area,6100000,-80.8,25.4,-79.9,26.4
+8,Philadelphia Metro Area,6100000,-76.0,39.6,-74.7,40.5
+9,Atlanta Metro Area,6300000,-85.0,33.3,-83.8,34.3
+10,Phoenix Metro Area,5100000,-112.8,33.0,-111.3,34.0
+11,Boston Metro Area,5000000,-71.8,42.0,-70.5,42.7
+12,San Francisco Bay Area,7700000,-123.0,37.1,-121.5,38.3
+13,Seattle Metro Area,4100000,-122.8,47.1,-121.5,48.0
+14,Detroit Metro Area,4300000,-84.0,42.0,-82.5,42.9
+15,San Diego Metro Area,3300000,-117.5,32.5,-116.5,33.2
+16,Minneapolis-St. Paul Metro Area,3700000,-94.0,44.5,-92.8,45.3
+17,Tampa Bay Area,3300000,-82.9,27.6,-82.0,28.3
+18,Denver Metro Area,3000000,-105.5,39.3,-104.2,40.2
+19,St. Louis Metro Area,2800000,-91.0,38.3,-89.8,39.0
+20,Baltimore Metro Area,2800000,-77.2,39.0,-76.0,39.7
+21,Orlando Metro Area,2700000,-81.8,28.2,-80.8,28.9
+22,Charlotte Metro Area,2800000,-81.4,34.9,-80.3,35.6
+23,San Antonio Metro Area,2700000,-99.1,29.1,-97.9,29.8
+24,Portland (OR) Metro Area,2500000,-123.3,45.2,-122.0,45.9
+25,Sacramento Metro Area,2400000,-121.9,38.2,-120.9,38.9
+26,Las Vegas Metro Area,2300000,-115.8,35.8,-114.7,36.5
+27,Austin Metro Area,2500000,-98.3,30.0,-97.1,30.7
+28,Kansas City Metro Area,2200000,-95.1,38.7,-94.0,39.4
+29,Columbus (OH) Metro Area,2200000,-83.5,39.7,-82.5,40.3
+30,Indianapolis Metro Area,2100000,-86.7,39.5,-85.6,40.1
+31,Cleveland Metro Area,2100000,-82.3,41.2,-81.0,41.8
+32,Nashville Metro Area,2100000,-87.3,35.8,-86.2,36.5
+33,Virginia Beach-Norfolk Metro Area,1800000,-76.8,36.5,-75.7,37.2
+34,Providence Metro Area,1670000,-71.9,41.5,-71.0,42.1
+35,Milwaukee Metro Area,1570000,-88.3,42.8,-87.7,43.3
+36,Jacksonville Metro Area,1700000,-82.2,29.9,-81.2,30.7
+# --- Canada (Estimates ~2023-2024, Metro Areas > 1M) ---
+37,Toronto Metro Area,6400000,-80.0,43.4,-78.8,44.1
+38,Montreal Metro Area,4300000,-74.3,45.2,-73.0,45.9
+39,Vancouver Metro Area,2650000,-123.5,49.0,-122.4,49.5
+40,Calgary Metro Area,1600000,-114.6,50.8,-113.5,51.3
+41,Ottawa-Gatineau Metro Area,1500000,-76.5,45.0,-75.0,45.7
+42,Edmonton Metro Area,1500000,-114.1,53.3,-112.9,53.8
+# --- Mexico (Estimates ~2023-2024, Metro Areas > 1M) ---
+43,Mexico City Metro Area,22000000,-99.5,19.0,-98.5,19.8
+44,Guadalajara Metro Area,5400000,-103.8,20.4,-102.9,20.9
+45,Monterrey Metro Area,5100000,-100.8,25.4,-99.8,26.0
+46,Puebla Metro Area,3300000,-98.6,18.8,-97.7,19.3
+47,Tijuana Area,2200000,-117.3,32.3,-116.7,32.7
+48,Toluca Area,2600000,-99.9,19.1,-99.3,19.6
+49,Leon Area,1900000,-101.9,20.9,-101.3,21.4
+50,Juarez Area,1500000,-106.7,31.5,-106.1,31.9
+# --- China (Estimates ~2023-2024, Metro Areas > 1M, Selection) ---
+51,Shanghai Metro Area,26000000,120.8,30.6,122.2,31.9
+52,Beijing Metro Area,22000000,115.4,39.4,117.5,41.1
+53,Guangzhou-Foshan Metro Area,27000000,112.5,22.5,114.1,23.8
+54,Shenzhen Area,17600000,113.7,22.4,114.6,22.9
+55,Chongqing Metro Area,32000000,105.4,28.2,110.2,32.2
+56,Chengdu Area,21000000,102.9,30.1,104.9,31.4
+57,Tianjin Area,14000000,116.5,38.6,118.1,40.2
+58,Wuhan Area,11000000,113.6,29.9,115.1,31.4
+59,Hangzhou Area,10000000,118.3,29.2,120.7,30.6
+60,Dongguan Area,10500000,113.5,22.6,114.3,23.2
+# --- Russia (Estimates ~2023-2024, Metro Areas > 1M) ---
+61,Moscow Metro Area,21500000,36.0,55.0,39.0,56.5
+62,Saint Petersburg Area,5600000,29.8,59.7,30.7,60.2
+63,Novosibirsk Area,1600000,82.6,54.8,83.2,55.2
+64,Yekaterinburg Area,1500000,60.3,56.7,61.0,57.0
+65,Kazan Area,1300000,48.8,55.6,49.5,56.0
+66,Nizhny Novgorod Area,1200000,43.6,56.1,44.3,56.5
+67,Chelyabinsk Area,1200000,61.0,54.9,61.8,55.4
+68,Samara Area,1150000,49.8,53.0,50.5,53.4
+69,Omsk Area,1150000,72.9,54.8,73.8,55.2
+70,Rostov-on-Don Area,1140000,39.4,47.1,40.0,47.4
+71,Ufa Area,1130000,55.7,54.5,56.4,55.0
+72,Krasnoyarsk Area,1100000,92.5,55.8,93.2,56.2
+73,Voronezh Area,1050000,39.0,51.5,39.5,51.9
+74,Perm Area,1040000,55.9,57.8,56.6,58.3
+75,Volgograd Area,1010000,44.2,48.3,45.0,49.0
+# --- Brazil (Estimates ~2023-2024, Metro Areas > 1M) ---
+76,Sao Paulo Metro Area,22600000,-47.2,-24.2,-46.0,-23.2
+77,Rio de Janeiro Metro Area,13700000,-44.2,-23.2,-42.8,-22.4
+78,Belo Horizonte Metro Area,6100000,-44.5,-20.2,-43.5,-19.5
+79,Brasilia Area (Federal District),3100000,-48.3,-16.1,-47.3,-15.5
+80,Salvador Metro Area,4000000,-38.8,-13.2,-38.2,-12.7
+81,Fortaleza Metro Area,4200000,-39.0,-4.0,-38.3,-3.5
+82,Recife Metro Area,4200000,-35.2,-8.3,-34.7,-7.8
+83,Curitiba Metro Area,3700000,-49.8,-25.8,-48.8,-25.1
+84,Porto Alegre Metro Area,4400000,-51.7,-30.4,-50.8,-29.7
+85,Manaus Area,2700000,-60.2,-3.3,-59.7,-2.8
+86,Campinas Metro Area,3300000,-47.6,-23.2,-46.6,-22.5
+87,Goiania Metro Area,2700000,-49.6,-17.0,-48.9,-16.3
+

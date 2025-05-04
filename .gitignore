@@ -1,0 +1,40 @@
+# Compiled Executables
+query_app
+run_tests
+*.exe
+*.out
+
+# Object Files
+*.o
+*.obj
+*.slo
+
+# Output Files
+results.csv
+*.png
+*.jpg
+*.jpeg
+
+# IDE/Editor specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.idea/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Build directories (if using CMake or other build systems)
+build/
+Build/
+cmake-build-*/
+
+# Dependency directories (e.g., Python virtual environment)
+venv/
+env/
+*.pyc
+__pycache__/
+
+# Log files
+*.log
