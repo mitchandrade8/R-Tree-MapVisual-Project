@@ -6,6 +6,16 @@ This project implements a basic 2D R-Tree data structure in C++ for efficient sp
 
 A companion Python script is provided to read the output CSV and generate a map visualization of the query results, including labels and country context.
 
+## What is an R-Tree?
+
+("Rectangle Tree") is a tree-based data structure used for indexing multi-dimensional information, primarily spatial data like geographical coordinates, rectangles, or polygons. Key characteristics include:
+
+* **Hierarchical Structure:** Similar to B-Trees, but designed for spatial data.
+* **Minimum Bounding Rectangles (MBRs):** Each node in the tree represents the smallest rectangle (MBR) that encloses all the data points or child node MBRs contained within it.
+* **Spatial Indexing:** Organizes spatial objects based on their location and extent.
+* **Efficient Queries:** Allows for fast searching of spatial data, such as finding all objects that intersect with or are contained within a given query rectangle (window queries) or finding objects near a specific point (nearest neighbor queries). Leaf nodes contain pointers to the actual data objects (or the data itself), while internal nodes contain pointers to child nodes.
+
+
 ## Visuals
 
 ![Spatial Data over the US](images/UnitedStates.png "United States")
