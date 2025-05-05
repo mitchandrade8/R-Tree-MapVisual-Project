@@ -6,6 +6,10 @@ This project implements a basic 2D R-Tree data structure in C++ for efficient sp
 
 A companion Python script is provided to read the output CSV and generate a map visualization of the query results, including labels and country context.
 
+## Visuals
+
+![Spatial Data over the US](images/UnitedStates.png "United States")
+
 ## Features
 
 * **C++ R-Tree Implementation:** A simple R-Tree using Minimum Bounding Rectangles (MBRs) supporting insertion and spatial intersection queries.

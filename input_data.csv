@@ -1,4 +1,5 @@
 ID,Name,Population,MinX,MinY,MaxX,MaxY
+# --- North America ---
 # --- United States (Estimates ~2023-2024, Metro Areas > 1M) ---
 1,New York Metro Area,20100000,-75.0,40.0,-71.8,41.8
 2,Los Angeles Metro Area,18500000,-119.0,33.4,-117.0,34.8
@@ -52,44 +53,173 @@ ID,Name,Population,MinX,MinY,MaxX,MaxY
 48,Toluca Area,2600000,-99.9,19.1,-99.3,19.6
 49,Leon Area,1900000,-101.9,20.9,-101.3,21.4
 50,Juarez Area,1500000,-106.7,31.5,-106.1,31.9
-# --- China (Estimates ~2023-2024, Metro Areas > 1M, Selection) ---
-51,Shanghai Metro Area,26000000,120.8,30.6,122.2,31.9
-52,Beijing Metro Area,22000000,115.4,39.4,117.5,41.1
-53,Guangzhou-Foshan Metro Area,27000000,112.5,22.5,114.1,23.8
-54,Shenzhen Area,17600000,113.7,22.4,114.6,22.9
-55,Chongqing Metro Area,32000000,105.4,28.2,110.2,32.2
-56,Chengdu Area,21000000,102.9,30.1,104.9,31.4
-57,Tianjin Area,14000000,116.5,38.6,118.1,40.2
-58,Wuhan Area,11000000,113.6,29.9,115.1,31.4
-59,Hangzhou Area,10000000,118.3,29.2,120.7,30.6
-60,Dongguan Area,10500000,113.5,22.6,114.3,23.2
-# --- Russia (Estimates ~2023-2024, Metro Areas > 1M) ---
-61,Moscow Metro Area,21500000,36.0,55.0,39.0,56.5
-62,Saint Petersburg Area,5600000,29.8,59.7,30.7,60.2
-63,Novosibirsk Area,1600000,82.6,54.8,83.2,55.2
-64,Yekaterinburg Area,1500000,60.3,56.7,61.0,57.0
-65,Kazan Area,1300000,48.8,55.6,49.5,56.0
-66,Nizhny Novgorod Area,1200000,43.6,56.1,44.3,56.5
-67,Chelyabinsk Area,1200000,61.0,54.9,61.8,55.4
-68,Samara Area,1150000,49.8,53.0,50.5,53.4
-69,Omsk Area,1150000,72.9,54.8,73.8,55.2
-70,Rostov-on-Don Area,1140000,39.4,47.1,40.0,47.4
-71,Ufa Area,1130000,55.7,54.5,56.4,55.0
-72,Krasnoyarsk Area,1100000,92.5,55.8,93.2,56.2
-73,Voronezh Area,1050000,39.0,51.5,39.5,51.9
-74,Perm Area,1040000,55.9,57.8,56.6,58.3
-75,Volgograd Area,1010000,44.2,48.3,45.0,49.0
+# --- South America ---
 # --- Brazil (Estimates ~2023-2024, Metro Areas > 1M) ---
-76,Sao Paulo Metro Area,22600000,-47.2,-24.2,-46.0,-23.2
-77,Rio de Janeiro Metro Area,13700000,-44.2,-23.2,-42.8,-22.4
-78,Belo Horizonte Metro Area,6100000,-44.5,-20.2,-43.5,-19.5
-79,Brasilia Area (Federal District),3100000,-48.3,-16.1,-47.3,-15.5
-80,Salvador Metro Area,4000000,-38.8,-13.2,-38.2,-12.7
-81,Fortaleza Metro Area,4200000,-39.0,-4.0,-38.3,-3.5
-82,Recife Metro Area,4200000,-35.2,-8.3,-34.7,-7.8
-83,Curitiba Metro Area,3700000,-49.8,-25.8,-48.8,-25.1
-84,Porto Alegre Metro Area,4400000,-51.7,-30.4,-50.8,-29.7
-85,Manaus Area,2700000,-60.2,-3.3,-59.7,-2.8
-86,Campinas Metro Area,3300000,-47.6,-23.2,-46.6,-22.5
-87,Goiania Metro Area,2700000,-49.6,-17.0,-48.9,-16.3
+51,Sao Paulo Metro Area,22600000,-47.2,-24.2,-46.0,-23.2
+52,Rio de Janeiro Metro Area,13700000,-44.2,-23.2,-42.8,-22.4
+53,Belo Horizonte Metro Area,6100000,-44.5,-20.2,-43.5,-19.5
+54,Brasilia Area (Federal District),3100000,-48.3,-16.1,-47.3,-15.5
+55,Salvador Metro Area,4000000,-38.8,-13.2,-38.2,-12.7
+56,Fortaleza Metro Area,4200000,-39.0,-4.0,-38.3,-3.5
+57,Recife Metro Area,4200000,-35.2,-8.3,-34.7,-7.8
+58,Curitiba Metro Area,3700000,-49.8,-25.8,-48.8,-25.1
+59,Porto Alegre Metro Area,4400000,-51.7,-30.4,-50.8,-29.7
+60,Manaus Area,2700000,-60.2,-3.3,-59.7,-2.8
+61,Campinas Metro Area,3300000,-47.6,-23.2,-46.6,-22.5
+62,Goiania Metro Area,2700000,-49.6,-17.0,-48.9,-16.3
+# --- Argentina ---
+63,Buenos Aires Metro Area,15500000,-59.0,-34.9,-58.0,-34.3
+64,Cordoba Area,1600000,-64.5,-31.6,-63.9,-31.1
+65,Rosario Area,1400000,-61.0,-33.2,-60.3,-32.7
+# --- Colombia ---
+66,Bogota Metro Area,11500000,-74.4,-4.4,-73.8,4.9 # Check Latitude sign? Should be positive
+66,Bogota Metro Area,11500000,-74.4,4.4,-73.8,4.9 # Corrected Latitude
+67,Medellin Metro Area,4100000,-75.8,6.0,-75.3,6.4
+68,Cali Metro Area,2800000,-76.7,3.2,-76.3,3.7
+69,Barranquilla Metro Area,2400000,-74.9,10.8,-74.6,11.1
+# --- Peru ---
+70,Lima Metro Area,11200000,-77.3,-12.3,-76.7,-11.7
+# --- Chile ---
+71,Santiago Metro Area,6900000,-71.0,-33.7,-70.3,-33.2
+# --- Venezuela ---
+72,Caracas Area,2900000,-67.1,10.3,-66.7,10.6
+73,Maracaibo Area,2300000,-71.8,10.5,-71.4,10.8
+# --- Europe ---
+# --- Russia (Estimates ~2023-2024, Metro Areas > 1M) ---
+74,Moscow Metro Area,21500000,36.0,55.0,39.0,56.5
+75,Saint Petersburg Area,5600000,29.8,59.7,30.7,60.2
+76,Novosibirsk Area,1600000,82.6,54.8,83.2,55.2
+77,Yekaterinburg Area,1500000,60.3,56.7,61.0,57.0
+78,Kazan Area,1300000,48.8,55.6,49.5,56.0
+79,Nizhny Novgorod Area,1200000,43.6,56.1,44.3,56.5
+80,Chelyabinsk Area,1200000,61.0,54.9,61.8,55.4
+81,Samara Area,1150000,49.8,53.0,50.5,53.4
+82,Omsk Area,1150000,72.9,54.8,73.8,55.2
+83,Rostov-on-Don Area,1140000,39.4,47.1,40.0,47.4
+84,Ufa Area,1130000,55.7,54.5,56.4,55.0
+85,Krasnoyarsk Area,1100000,92.5,55.8,93.2,56.2
+86,Voronezh Area,1050000,39.0,51.5,39.5,51.9
+87,Perm Area,1040000,55.9,57.8,56.6,58.3
+88,Volgograd Area,1010000,44.2,48.3,45.0,49.0
+# --- Germany (Estimates ~2023-2024, Metro Areas > 1M) ---
+89,Berlin Area,3700000,13.0,52.3,13.8,52.7
+90,Hamburg Area,1800000,9.7,53.4,10.3,53.7
+91,Munich Area,1500000,11.3,48.0,11.8,48.3
+92,Cologne Area,1100000,6.8,50.8,7.2,51.1 # City proper > 1M
+93,Frankfurt Area,2300000,8.3,49.9,9.0,50.3 # Metro Rhein-Main approx
+# --- United Kingdom ---
+94,London Metro Area,14800000,-0.5,51.2,0.3,51.7
+95,Manchester Metro Area,2800000,-2.5,53.3,-2.0,53.6
+96,Birmingham Area,2600000,-2.1,52.3,-1.7,52.6 # West Midlands Conurbation
+# --- France ---
+97,Paris Metro Area,11200000,1.9,48.6,2.8,49.1
+98,Lyon Metro Area,1700000,4.6,45.6,5.1,45.9
+99,Marseille Area,1600000,5.2,43.1,5.6,43.4
+# --- Spain ---
+100,Madrid Metro Area,6700000,-4.0,40.2,-3.3,40.7
+101,Barcelona Metro Area,5500000,1.8,41.2,2.5,41.6
+# --- Italy ---
+102,Rome Metro Area,4300000,12.2,41.7,12.8,42.1
+103,Milan Metro Area,3100000,8.9,45.3,9.4,45.6
+# --- Other Europe ---
+104,Istanbul Area,15900000,28.0,40.8,29.9,41.3 # Turkey (partly Europe)
+105,Kyiv Area,3000000,30.2,50.2,30.8,50.6 # Ukraine
+106,Warsaw Area,1800000,20.8,52.1,21.3,52.4 # Poland
+107,Bucharest Area,1800000,25.9,44.3,26.3,44.5 # Romania
+108,Vienna Area,1900000,16.1,48.1,16.6,48.4 # Austria
+109,Budapest Area,1750000,18.9,47.3,19.3,47.6 # Hungary
+110,Prague Area,1300000,14.2,49.9,14.7,50.2 # Czech Republic
+111,Athens Area,3100000,23.6,37.8,23.9,38.1 # Greece
+112,Lisbon Area,2800000,-9.3,38.6,-8.9,38.9 # Portugal
+113,Amsterdam Area,1400000,4.7,52.2,5.1,52.5 # Netherlands (Randstad component)
+114,Brussels Area,1200000,4.2,50.7,4.5,50.9 # Belgium
+115,Stockholm Area,1600000,17.8,59.1,18.3,59.5 # Sweden
+116,Copenhagen Area,1350000,12.4,55.5,12.7,55.8 # Denmark
+117,Helsinki Area,1300000,24.7,60.1,25.3,60.4 # Finland
+118,Oslo Area,1050000,10.5,59.8,11.1,60.1 # Norway
+# --- Asia ---
+# --- China (Estimates ~2023-2024, Metro Areas > 1M, Selection) ---
+119,Shanghai Metro Area,26000000,120.8,30.6,122.2,31.9
+120,Beijing Metro Area,22000000,115.4,39.4,117.5,41.1
+121,Guangzhou-Foshan Metro Area,27000000,112.5,22.5,114.1,23.8
+122,Shenzhen Area,17600000,113.7,22.4,114.6,22.9
+123,Chongqing Metro Area,32000000,105.4,28.2,110.2,32.2
+124,Chengdu Area,21000000,102.9,30.1,104.9,31.4
+125,Tianjin Area,14000000,116.5,38.6,118.1,40.2
+126,Wuhan Area,11000000,113.6,29.9,115.1,31.4
+127,Hangzhou Area,10000000,118.3,29.2,120.7,30.6
+128,Dongguan Area,10500000,113.5,22.6,114.3,23.2
+129,Xi'an Area,13000000,107.6,33.7,109.5,34.6
+130,Suzhou Area,12700000,119.9,30.9,121.3,31.9
+131,Harbin Area,10000000,125.7,45.1,130.2,46.3
+132,Nanjing Area,9300000,118.2,31.2,119.3,32.6
+133,Shenyang Area,9000000,122.4,41.1,123.8,42.3
+# --- India ---
+134,Delhi Metro Area,33800000,76.8,28.2,77.6,29.0 # NCR approx
+135,Mumbai Metro Area,21700000,72.7,18.8,73.1,19.3
+136,Kolkata Metro Area,15600000,88.1,22.3,88.6,22.8
+137,Bangalore Area,14000000,77.4,12.8,77.8,13.2
+138,Chennai Area,12000000,80.0,12.8,80.4,13.2
+139,Hyderabad Area,11000000,78.2,17.2,78.7,17.6
+140,Ahmedabad Area,8700000,72.3,22.8,72.8,23.3
+141,Pune Area,7300000,73.6,18.3,74.1,18.7
+142,Surat Area,8000000,72.7,21.0,73.1,21.3
+# --- Japan ---
+143,Tokyo Metro Area,37000000,138.8,35.0,140.9,36.3 # Greater Tokyo
+144,Osaka-Kobe-Kyoto Area,19000000,134.8,34.3,136.0,35.3 # Keihanshin
+145,Nagoya Area,9500000,136.6,34.9,137.3,35.4 # Chukyo
+# --- Indonesia ---
+146,Jakarta Metro Area,35000000,106.5,-6.5,107.1,-6.0 # Jabodetabek
+147,Surabaya Area,10000000,112.5,-7.5,113.0,-7.1 # Gerbangkertosusila
+# --- Pakistan ---
+148,Karachi Area,17600000,66.6,24.7,67.5,25.2
+149,Lahore Area,14400000,74.1,31.3,74.6,31.7
+# --- Bangladesh ---
+150,Dhaka Metro Area,23900000,90.2,23.6,90.6,24.0
+# --- Philippines ---
+151,Metro Manila Area,14900000,120.9,14.3,121.2,14.8
+# --- Vietnam ---
+152,Ho Chi Minh City Area,9500000,106.5,10.5,106.9,11.1
+153,Hanoi Area,5400000,105.6,20.8,106.1,21.2
+# --- Thailand ---
+154,Bangkok Metro Area,11200000,100.3,13.5,100.9,14.0
+# --- South Korea ---
+155,Seoul Capital Area,26100000,126.5,37.1,127.7,38.0
+156,Busan Area,3700000,128.8,34.9,129.3,35.4
+# --- Other Asia ---
+157,Tehran Area,9500000,51.0,35.5,51.7,35.9 # Iran
+158,Riyadh Area,7800000,46.5,24.4,47.0,24.9 # Saudi Arabia
+159,Baghdad Area,7900000,44.1,33.1,44.6,33.5 # Iraq
+160,Yangon Area,5700000,96.0,16.7,96.4,17.0 # Myanmar
+161,Kuala Lumpur Area,8800000,101.5,2.9,101.9,3.3 # Malaysia
+162,Singapore Area,5900000,103.6,1.2,104.1,1.5 # Singapore
+# --- Africa ---
+# --- Egypt ---
+163,Cairo Metro Area,22600000,31.0,29.8,31.7,30.3 # Greater Cairo
+164,Alexandria Area,5600000,29.8,31.0,30.1,31.4
+# --- Nigeria ---
+165,Lagos Metro Area,16600000,3.0,6.3,3.8,6.7
+166,Kano Area,4400000,8.4,11.9,8.7,12.1
+167,Ibadan Area,3800000,3.7,7.2,4.1,7.6
+# --- DR Congo ---
+168,Kinshasa Area,17000000,-15.5,-4.5,-15.1,-4.1 # Check Longitude sign? Should be positive
+168,Kinshasa Area,17000000,15.1,-4.5,15.5,-4.1 # Corrected Longitude
+# --- South Africa ---
+169,Johannesburg Area,6300000,27.8,-26.4,28.3,-26.0 # Gauteng component
+170,Cape Town Area,4900000,18.2,-34.1,18.9,-33.7
+# --- Other Africa ---
+171,Nairobi Area,5500000,36.6,-1.4,37.1,-1.1 # Kenya
+172,Addis Ababa Area,5700000,38.6,8.8,39.0,9.1 # Ethiopia
+173,Dar es Salaam Area,8100000,39.0,-7.0,39.5,-6.6 # Tanzania
+174,Abidjan Area,6300000,-4.2,5.1,-3.8,5.5 # Ivory Coast
+175,Accra Area,5500000,-0.4,5.4,0.0,5.7 # Ghana
+176,Algiers Area,3300000,2.9,36.6,3.3,36.9 # Algeria
+177,Casablanca Area,3900000,-7.8,33.4,-7.4,33.7 # Morocco
+# --- Oceania ---
+# --- Australia ---
+178,Sydney Area,5200000,150.5,-34.1,151.4,-33.5
+179,Melbourne Area,5100000,144.5,-38.2,145.5,-37.5
+180,Brisbane Area,2600000,152.7,-27.7,153.3,-27.2
+181,Perth Area,2100000,115.6,-32.3,116.2,-31.7
+182,Adelaide Area,1400000,138.4,-35.1,138.8,-34.7
 
