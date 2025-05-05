@@ -18,9 +18,14 @@ A companion Python script is provided to read the output CSV and generate a map 
 
 ## Visuals
 
+* **United States:**
 ![Spatial Data over the US](images/UnitedStates.png "United States")
 
+* **China:**
 ![Spatial Data over China](images/China.png "China")
+
+* **World:**
+![Spatial Data over the World](images/World.png "World")
 
 ## Features
 
