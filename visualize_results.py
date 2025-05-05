@@ -5,11 +5,13 @@ from shapely.geometry import Polygon, Point
 import contextily as cx
 import os
 import locale
-from adjustText import adjust_text # Import the adjustText library
+# Note: adjustText is no longer strictly needed if we skip the call for country view
+# but keep it imported in case needed later or for other adjustments.
+from adjustText import adjust_text
 
 # --- Configuration ---
 csv_filename = 'results.csv'
-output_plot_filename = 'population_map_conditional_labels.png' # Changed output name
+output_plot_filename = 'population_map_no_adjust_country_labels.png' # Changed output name
 # --- Path to the downloaded Natural Earth shapefile ---
 natural_earth_shp_path = os.path.join('natural_earth_data', 'ne_110m_admin_0_countries.shp')
 
@@ -30,7 +32,7 @@ def format_population(pop_number):
         return str(pop_number)
 
 def plot_map():
-    """Reads the CSV, creates geometries, and plots the map with labels only for zoomed views."""
+    """Reads the CSV, creates geometries, and plots the map with unadjusted labels for country views."""
 
     # Check if the results CSV file exists
     if not os.path.exists(csv_filename):
@@ -81,7 +83,7 @@ def plot_map():
                  except Exception as e:
                      print(f"Warning: Could not add basemap for empty results plot. Error: {e}")
 
-                 plt.tight_layout()
+                 fig.tight_layout() # Use fig object
                  plt.savefig(output_plot_filename)
                  print(f"Saved empty world map context to {output_plot_filename}")
             else:
@@ -107,7 +109,7 @@ def plot_map():
 
         # --- Plotting ---
         print("Generating plot...")
-        fig, ax = plt.subplots(1, 1, figsize=(15, 10))
+        fig, ax = plt.subplots(1, 1, figsize=(15, 10)) # Create figure and axes objects
 
         # Plot world map first as a base layer
         if world is not None:
@@ -115,7 +117,7 @@ def plot_map():
              world_proj.plot(ax=ax, color='#E0E0E0', edgecolor='darkgrey', linewidth=0.5, zorder=1)
 
         # Plot the bounding boxes from the query results on top
-        gdf.plot(ax=ax, edgecolor='red', facecolor='red', alpha=0.4, linewidth=1.5, label='High Population Areas', zorder=3)
+        plot_elements = gdf.plot(ax=ax, edgecolor='red', facecolor='red', alpha=0.4, linewidth=1.5, label='High Population Areas', zorder=3)
 
         # Add a basemap using contextily
         try:
@@ -124,25 +126,17 @@ def plot_map():
         except Exception as e:
             print(f"Warning: Could not add basemap. Plotting without it. Error: {e}")
 
-        # --- Conditionally add and adjust labels ---
+        # --- Conditionally add labels ---
         if not query_is_world:
-            print("Zoomed view detected. Adding and adjusting labels...")
-            texts = []
+            print("Zoomed view detected. Adding labels directly above points (no adjustment)...")
+            # Place labels directly without storing them for adjustText
             for idx, row in gdf.iterrows():
-                point = row.geometry.representative_point()
+                point = gdf.geometry.iloc[idx].representative_point() # Use iloc for safety
                 pop_str = format_population(row["Population"])
                 label = f'{row["Name"]}\n({pop_str})'
-                # Slightly smaller font size
-                texts.append(ax.text(point.x, point.y, label, fontsize=5, ha='center', va='bottom', color='black', zorder=5))
-
-            # Adjust text labels to avoid overlap
-            print("Adjusting text labels (this may take a moment)...")
-            adjust_text(texts,
-                        ax=ax,
-                        force_text=(0.5, 0.5), # Repulsion force
-                        lim=300, # Iteration limit
-                        arrowprops=dict(arrowstyle='-', color='black', lw=0.7))
-            print("Finished adjusting labels.")
+                # Place text directly at the point coordinates using ax.text
+                ax.text(point.x, point.y, label, fontsize=6, ha='center', va='bottom', color='black', zorder=5)
+            print("Finished adding labels.")
         else:
             print("World view detected. Skipping labels for clarity.")
 
@@ -165,8 +159,12 @@ def plot_map():
              ax.set_ylim(miny - padding_y, maxy + padding_y)
         # Else: Keep default limits if gdf is empty but world map was plotted
 
+        # Use fig.tight_layout() to attempt fixing layout issues
+        try:
+            fig.tight_layout()
+        except ValueError as e:
+            print(f"Warning: tight_layout failed: {e}. Plot may have overlapping elements.")
 
-        plt.tight_layout()
         plt.savefig(output_plot_filename)
         print(f"Successfully saved map to {output_plot_filename}")
 
@@ -193,3 +191,6 @@ def plot_map():
 # --- Run the plotting function ---
 if __name__ == "__main__":
     plot_map()
+
+
+
