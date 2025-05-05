@@ -78,9 +78,9 @@ g++ main.cpp rtree.cpp -o query_app -std=c++17 -Wall -Wextra -O2
 
 * **Input the country:**
 
-    * Example: World or United States
+    * Example: 'World' or 'United States'
 
-    * Then input 1000000
+    * Then input '1000000'
 
 ```bash
 python visualize_results.py 
