@@ -71,4 +71,18 @@ Navigate to the project directory in your terminal and run:
 
 ```bash
 g++ main.cpp rtree.cpp -o query_app -std=c++17 -Wall -Wextra -O2
+```
+```bash
+./query_app  
+```
 
+* **Input the country:**
+    Example: World or United States
+
+    Then input 1000000
+
+```bash
+python visualize_results.py 
+```
+
+* **Then you should get a map and just open it:**
