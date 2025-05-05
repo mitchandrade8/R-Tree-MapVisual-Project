@@ -10,6 +10,8 @@ A companion Python script is provided to read the output CSV and generate a map 
 
 ![Spatial Data over the US](images/UnitedStates.png "United States")
 
+![Spatial Data over China](images/China.png "China")
+
 ## Features
 
 * **C++ R-Tree Implementation:** A simple R-Tree using Minimum Bounding Rectangles (MBRs) supporting insertion and spatial intersection queries.
