@@ -1,0 +1,44 @@
+# This is a sample requirements.txt file for testing GAIOS
+
+# Exact versions (good for OSV lookup)
+flask==1.1.2  # An older version of Flask, likely has known vulnerabilities
+requests==2.25.0 # Another older version, good for testing
+numpy==1.20.0
+
+# Version specifiers (will be marked as 'range' or 'any' by our parser, no direct OSV lookup)
+django>=3.0,<4.0
+pandas~=1.1
+scipy<=1.5.0
+# A package with no version, should be 'any'
+anotherpackage 
+
+# A package that is less common and might not have vulnerabilities
+smalltestpackage==0.1.0
+
+# Comments and blank lines
+# This is a comment line
+
+# Another comment after a package
+matplotlib==3.3.0 # For plotting
+
+# Lines that should be ignored by the current parser
+-e .
+-r common_requirements.txt
+--hash=sha256:abcdef123456...
+
+# A package that likely has no vulnerabilities listed on OSV.dev
+# (using a more recent version of a well-maintained library)
+# For example, a recent version of a utility library
+# python-dateutil==2.8.2 
+# Actually, let's use a very specific, less common one for a "None Found" test
+# if it's not in OSV.dev or has no listed vulns for the specific version
+tinyrecord==0.2.0
+
+# A package with a more complex specifier
+# Werkzeug!=2.0.0,>=1.0.1
+werkzeug>=1.0.1,!=2.0.0 # Our current regex might just pick up the first part or treat as range
+
+# A package that might not exist or has a typo (to test error handling from requests.get or OSV)
+# nonexistantpackage==1.0.0 
+# (Commented out as this would break a real `pip install -r requirements.txt`)
+# For GAIOS, if a package isn't found by OSV, it should just say "None Found" or similar.
