@@ -8,7 +8,7 @@ A companion Python script is provided to read the output CSV and generate a map 
 
 ## What is an R-Tree?
 
-("Rectangle Tree") is a tree-based data structure used for indexing multi-dimensional information, primarily spatial data like geographical coordinates, rectangles, or polygons. Key characteristics include:
+("Range Tree") is a tree-based data structure used for indexing multi-dimensional information, primarily spatial data like geographical coordinates, rectangles, or polygons. Key characteristics include:
 
 * **Hierarchical Structure:** Similar to B-Trees, but designed for spatial data.
 * **Minimum Bounding Rectangles (MBRs):** Each node in the tree represents the smallest rectangle (MBR) that encloses all the data points or child node MBRs contained within it.
